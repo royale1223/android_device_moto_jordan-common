@@ -339,10 +339,6 @@ public class BasebandSelectionPreference extends Preference implements Preferenc
         private TextView mFrequencies;
 
         private int[] mInitialPositions;
-        private String mSelectedRegion;
-        private String mSelectedCountry;
-        private String mSelectedVersion;
-
         public SelectionDialog(Context context, int regionPos, int countryPos, int versionPos) {
             super(context);
             mInitialPositions = new int[] { regionPos, countryPos, versionPos };
@@ -423,7 +419,6 @@ public class BasebandSelectionPreference extends Preference implements Preferenc
         }
 
         private void updateVersionSpinner() {
-            final RegionInfo region = mSelectedRegion != null ? mRegions.get(mSelectedRegion) : null;
             final CountryInfo country = getSelectedCountry();
             String[] versions = country != null ? country.versions : null;
 
