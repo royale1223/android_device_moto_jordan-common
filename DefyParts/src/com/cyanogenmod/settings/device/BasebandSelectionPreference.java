@@ -372,7 +372,7 @@ public class BasebandSelectionPreference extends Preference implements Preferenc
         }
 
         @Override
-        public void onNothingSelected(AdapterView parent) {
+        public void onNothingSelected(AdapterView<?> parent) {
             if (parent == mRegion) {
                 updateCountrySpinner();
             } else if (parent == mCountry) {

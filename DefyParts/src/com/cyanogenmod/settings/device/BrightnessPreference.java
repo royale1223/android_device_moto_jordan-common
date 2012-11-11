@@ -89,7 +89,7 @@ public class BrightnessPreference extends SeekBarDialogPreference implements See
 
         if (positiveResult) {
             value = mSeekBar.getProgress();
-            callChangeListener(new Integer(value));
+            callChangeListener(Integer.valueOf(value));
         } else {
             value = mOldValue;
         }
