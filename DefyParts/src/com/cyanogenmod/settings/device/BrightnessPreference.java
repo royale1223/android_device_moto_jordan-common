@@ -3,16 +3,13 @@ package com.cyanogenmod.settings.device;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.SystemProperties;
+import android.preference.SeekBarDialogPreference;
 import android.util.AttributeSet;
-import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager.LayoutParams;
-import android.preference.SeekBarDialogPreference;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.LinearLayout;
 
 
 public class BrightnessPreference extends SeekBarDialogPreference implements SeekBar.OnSeekBarChangeListener
